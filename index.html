@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('fondo.png');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .top-image {
+            width: 1023px;
+            height: auto;
+            display: block;
+            position: relative;
+        }
+
+        .top-wrapper {
+            position: relative;
+            width: 1023px;
+        }
+
+        .language-circle {
+            position: absolute;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+        }
+
+        .language-circle:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+        }
+
+        /* Posiciones absolutas de las banderas en píxeles */
+        .lang-es { top: 5px; right: 120px; }
+        .lang-en { top: 5px; right: 95px; }
+        .lang-de { top: 5px; right: 65px; }
+
+        .main-image {
+            width: 1023px;
+            height: auto;
+            display: block;
+            position: relative;
+        }
+
+        .circle-overlay {
+            position: absolute;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            width: 170px;
+            height: 170px;
+        }
+
+        .circle-overlay:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: 1023px;
+        }
+
+        /* Posiciones absolutas de los círculos en píxeles */
+        .circle-1 { top: 470px; left: 17px; }
+        .circle-2 { top: 470px; left: 214px; }
+        .circle-3 { top: 470px; left: 426px; }
+        .circle-4 { top: 470px; left: 638px; }
+        .circle-5 { top: 470px; left: 835px; }
+        
+        /* Círculo Social Responsability */
+        .circle-sr {
+            position: absolute;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            bottom: 10px;
+            right: 100px;
+        }
+        
+        .circle-sr:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Enlace de correo */
+        .email-link {
+            position: absolute;
+            bottom: 25px;
+            left: calc(50% - 300px);
+            color: transparent;
+            text-decoration: none;
+            font-size: 14px;
+            transition: opacity 0.3s ease;
+        }
+        
+        .email-link:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-wrapper">
+            <img src="top.png" alt="Top" class="top-image">
+            
+            <!-- Círculos de idiomas -->
+            <a href="ES_H1.html" class="language-circle lang-es" title="Español"></a>
+            <a href="index.html" class="language-circle lang-en" title="English"></a>
+            <a href="DE_H1.html" class="language-circle lang-de" title="Deutsch"></a>
+        </div>
+        
+        <div class="image-wrapper">
+            <img src="EN_H1.png" alt="Main Content" class="main-image">
+            
+            <!-- Círculos interactivos con efecto hover -->
+            <a href="EN_H2.html" class="circle-overlay circle-1" title="Consulting"></a>
+            <a href="EN_H3.html" class="circle-overlay circle-2" title="Project Management"></a>
+            <a href="EN_H4.html" class="circle-overlay circle-3" title="Gateway to Business in Africa"></a>
+            <a href="EN_H5.html" class="circle-overlay circle-4" title="Marketing & Promotion"></a>
+            <a href="EN_H6.html" class="circle-overlay circle-5" title="Inv & Sol Medical"></a>
+            
+            <!-- Círculo Social Responsability -->
+            <a href="H8_SR.html" class="circle-sr" title="Social Responsability"></a>
+            
+            <!-- Enlace de correo electrónico -->
+            <a href="mailto:robin@inv-sol.com" class="email-link">robin@inv-sol.com</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Responsibility - Inv & Sol Holding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('fondo.png');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: 100% 402px;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .top-wrapper {
+            position: relative;
+            width: 1023px;
+        }
+
+        .top-image {
+            width: 1023px;
+            height: auto;
+            display: block;
+            position: relative;
+        }
+
+        .language-circle {
+            position: absolute;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+        }
+
+        .language-circle:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+        }
+
+        .lang-es { top: 5px; right: 120px; }
+        .lang-en { top: 5px; right: 95px; }
+        .lang-de { top: 5px; right: 65px; }
+
+        .main-image {
+            width: 1023px;
+            height: auto;
+            display: block;
+            position: relative;
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: 1023px;
+        }
+
+        /* Menú de navegación */
+        .nav-menu {
+            position: absolute;
+            top: 455px;
+            left: 0;
+            width: 100%;
+            height: 46px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            color: transparent;
+            font-size: 14px;
+        }
+
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Anchos específicos para cada elemento del menú */
+        .nav-home { width: 65px; }
+        .nav-consulting { width: 125px; }
+        .nav-project { width: 220px; }
+        .nav-gateway { width: 280px; }
+        .nav-marketing { width: 215px; }
+        .nav-medical { width: 165px; }
+        .nav-contact { width: 95px; }
+
+        /* Enlace de correo */
+        .email-link {
+            position: absolute;
+            bottom: 40px;
+            left: calc(50% - 285px);
+            color: transparent;
+            text-decoration: none;
+            font-size: 14px;
+            transition: opacity 0.3s ease;
+        }
+
+        .email-link:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-wrapper">
+            <img src="top.png" alt="Top" class="top-image">
+            
+            <!-- Círculos de idiomas -->
+            <a href="ES_H1.html" class="language-circle lang-es" title="Español"></a>
+            <a href="index.html" class="language-circle lang-en" title="English"></a>
+            <a href="DE_H1.html" class="language-circle lang-de" title="Deutsch"></a>
+        </div>
+        
+        <div class="image-wrapper">
+            <img src="H8_Social_Responsability.png" alt="Social Responsibility" class="main-image">
+            
+            <!-- Menú de navegación -->
+            <div class="nav-menu">
+                <a href="index.html" class="nav-item nav-home" title="Home">HOME</a>
+                <a href="EN_H2.html" class="nav-item nav-consulting" title="Consulting">CONSULTING</a>
+                <a href="EN_H3.html" class="nav-item nav-project" title="Project Management">PROJECT MANAGEMENT</a>
+                <a href="EN_H4.html" class="nav-item nav-gateway" title="Gateway to Business in Africa">GATEWAY TO BUSINESS IN AFRICA</a>
+                <a href="EN_H5.html" class="nav-item nav-marketing" title="Marketing & Promotion">MARKETING & PROMOTION</a>
+                <a href="EN_H6.html" class="nav-item nav-medical" title="Inv & Sol Medical">INV & SOL MEDICAL</a>
+                <a href="contact.html" class="nav-item nav-contact" title="Contact">CONTACT</a>
+            </div>
+            
+            <!-- Enlace de correo electrónico -->
+            <a href="mailto:robin@inv-sol.com" class="email-link">robin@inv-sol.com</a>
+        </div>
+    </div>
+</body>
+</html>

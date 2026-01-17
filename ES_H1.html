@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inv & Sol Holding - Español</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('fondo.png');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: 100% 402px;
+            background-attachment: scroll;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .top-image {
+            width: 1023px;
+            height: 34px;
+            display: block;
+            position: relative;
+        }
+
+        .language-selector {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .lang-es {
+            top: 5px;
+            right: 120px;
+        }
+
+        .lang-en {
+            top: 5px;
+            right: 95px;
+        }
+
+        .lang-de {
+            top: 5px;
+            right: 65px;
+        }
+
+        .image-wrapper {
+            width: 1023px;
+            position: relative;
+        }
+
+        .main-image {
+            width: 1023px;
+            height: 1211px;
+            display: block;
+        }
+
+        .nav-menu {
+            position: absolute;
+            top: 405px;
+            left: 0;
+            width: 100%;
+            height: 46px;
+            display: flex;
+            z-index: 50;
+        }
+
+        .nav-item {
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: transparent;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-home {
+            width: 65px;
+        }
+
+        .nav-consulting {
+            width: 125px;
+        }
+
+        .nav-project {
+            width: 220px;
+        }
+
+        .nav-gateway {
+            width: 280px;
+        }
+
+        .nav-marketing {
+            width: 215px;
+        }
+
+        .nav-medical {
+            width: 165px;
+        }
+
+        .nav-contact {
+            width: 95px;
+        }
+
+        .nav-item.active {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .social-circle {
+            position: absolute;
+            bottom: 10px;
+            right: 100px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 50;
+        }
+
+        .social-circle:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+
+        .email-link {
+            position: absolute;
+            bottom: 25px;
+            left: calc(50% - 300px);
+            color: transparent;
+            text-decoration: none;
+            font-size: 14px;
+            transition: opacity 0.3s ease;
+            z-index: 50;
+        }
+
+        .email-link:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="position: relative; width: 1023px;">
+            <img src="top.png" alt="Top Banner" class="top-image">
+            
+            <!-- Language Selectors -->
+            <a href="ES_H1.html" class="language-selector lang-es" title="Español"></a>
+            <a href="index.html" class="language-selector lang-en" title="English"></a>
+            <a href="DE_H1.html" class="language-selector lang-de" title="Deutsch"></a>
+        </div>
+
+        <div class="image-wrapper">
+            <img src="ES_H1.png" alt="Inv & Sol Holding" class="main-image">
+            
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item nav-home">HOME</a>
+                <a href="EN_H2.html" class="nav-item nav-consulting">CONSULTING</a>
+                <a href="EN_H3.html" class="nav-item nav-project">PROJECT MANAGEMENT</a>
+                <a href="EN_H4.html" class="nav-item nav-gateway">GATEWAY TO BUSINESS IN AFRICA</a>
+                <a href="EN_H5.html" class="nav-item nav-marketing">MARKETING & PROMOTION</a>
+                <a href="EN_H6.html" class="nav-item nav-medical">INV & SOL MEDICAL</a>
+                <a href="contact.html" class="nav-item nav-contact">CONTACT</a>
+            </nav>
+
+            <!-- Social Responsibility Circle -->
+            <a href="H8_SR.html" class="social-circle" title="Social Responsibility"></a>
+
+            <!-- Email Link -->
+            <a href="mailto:robin@inv-sol.com" class="email-link">robin@inv-sol.com</a>
+        </div>
+    </div>
+</body>
+</html>
