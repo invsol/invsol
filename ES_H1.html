@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=5.0, user-scalable=yes">
     <title>Inv & Sol Holding - Español</title>
     <style>
         * {
@@ -158,6 +158,25 @@
 
         .email-link:hover {
             opacity: 0.7;
+        }
+
+        /* Responsive para móvil */
+        @media (max-width: 768px) {
+            html {
+                overflow-x: auto;
+            }
+
+            body {
+                background-position: top left;
+                background-size: 1023px auto;
+                min-width: 1023px;
+                overflow-x: auto;
+            }
+
+            .container {
+                align-items: flex-start;
+                min-width: 1023px;
+            }
         }
     </style>
 </head>
