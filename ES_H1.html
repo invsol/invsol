@@ -29,6 +29,9 @@
         }
 
         .top-image {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateZ(0);
             width: 1023px;
             height: 34px;
             display: block;
@@ -64,6 +67,9 @@
         }
 
         .main-image {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateZ(0);
             width: 1023px;
             height: 1211px;
             display: block;
@@ -160,6 +166,14 @@
             opacity: 0.7;
         }
 
+        /* Background Retina */
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            body {
+                background-image: url('Fondo@2x.png');
+                background-size: 1863px 402px;
+            }
+        }
+
         /* Responsive para móvil */
         @media (max-width: 768px) {
             html {
@@ -183,7 +197,12 @@
 <body>
     <div class="container">
         <div style="position: relative; width: 1023px;">
-            <img src="top.png" alt="Top Banner" class="top-image">
+            <img src="top.png" 
+                 srcset="top.png 1x, top@2x.png 2x" 
+                 alt="Top" 
+                 class="top-image"
+                 width="1023"
+                 height="34">
             
             <!-- Language Selectors -->
             <a href="ES_H1.html" class="language-selector lang-es" title="Español"></a>
@@ -192,7 +211,12 @@
         </div>
 
         <div class="image-wrapper">
-            <img src="ES_H1.png" alt="Inv & Sol Holding" class="main-image">
+            <img src="ES_H1.png" 
+                 srcset="ES_H1.png 1x, ES_H1@2x.png 2x" 
+                 alt="Inv & Sol Holding" 
+                 class="main-image"
+                 width="1023"
+                 height="1211">
             
             <!-- Navigation Menu -->
             <nav class="nav-menu">
@@ -209,8 +233,4 @@
             <a href="H8_SR.html" class="social-circle" title="Social Responsibility"></a>
 
             <!-- Email Link -->
-            <a href="mailto:robin@inv-sol.com" class="email-link">robin@inv-sol.com</a>
-        </div>
-    </div>
-</body>
-</html>
+            <a href="/cdn-cgi/l/email-protection#cbb9a4a9a2a58ba2a5bde6b8a4a7e5a8a4a6" class="email-link"><span class="__cf_email_

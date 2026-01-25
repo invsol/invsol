@@ -32,6 +32,9 @@
         }
 
         .top-image {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateZ(0);
             width: 1023px;
             height: auto;
             display: block;
@@ -57,6 +60,9 @@
         .lang-de { top: 5px; right: 65px; }
 
         .main-image {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateZ(0);
             width: 1023px;
             height: auto;
             display: block;
@@ -119,6 +125,14 @@
             opacity: 0.7;
         }
 
+        /* Background Retina */
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            body {
+                background-image: url('Fondo@2x.png');
+                background-size: 1863px 402px;
+            }
+        }
+
         /* Responsive para móvil */
         @media (max-width: 768px) {
             html {
@@ -142,7 +156,12 @@
 <body>
     <div class="container">
         <div class="top-wrapper">
-            <img src="top.png" alt="Top" class="top-image">
+            <img src="top.png" 
+                 srcset="top.png 1x, top@2x.png 2x" 
+                 alt="Top" 
+                 class="top-image"
+                 width="1023"
+                 height="34">
             
             <!-- Círculos de idiomas -->
             <a href="ES_H1.html" class="language-circle lang-es" title="Español"></a>
@@ -151,7 +170,12 @@
         </div>
         
         <div class="image-wrapper">
-            <img src="H8_Social_Responsability.png" alt="Social Responsibility" class="main-image">
+            <img src="H8_Social_Responsability.png" 
+                 srcset="H8_Social_Responsability.png 1x, H8_Social_Responsability@2x.png 2x" 
+                 alt="Social Responsibility" 
+                 class="main-image"
+                 width="1024"
+                 height="869">
             
             <!-- Menú de navegación -->
             <div class="nav-menu">

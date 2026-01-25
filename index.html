@@ -31,6 +31,9 @@
             height: auto;
             display: block;
             position: relative;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateZ(0);
         }
 
         .top-wrapper {
@@ -62,6 +65,9 @@
             height: auto;
             display: block;
             position: relative;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateZ(0);
         }
 
         .circle-overlay {
@@ -364,7 +370,12 @@
 <body>
     <div class="container">
         <div class="top-wrapper">
-            <img src="top.png" alt="Top" class="top-image">
+            <img src="top.png" 
+                 srcset="top.png 1x, top@2x.png 2x" 
+                 alt="Top" 
+                 class="top-image"
+                 width="1023"
+                 height="34">
             
             <!-- Círculos de idiomas -->
             <a href="ES_H1.html" class="language-circle lang-es" title="Español"></a>
@@ -373,7 +384,12 @@
         </div>
         
         <div class="image-wrapper">
-            <img src="EN_H1.png" alt="Main Content" class="main-image">
+            <img src="EN_H1.png" 
+                 srcset="EN_H1.png 1x, EN_H1@2x.png 2x" 
+                 alt="Main Content" 
+                 class="main-image"
+                 width="1023"
+                 height="1236">
             
             <!-- Círculos interactivos con efecto hover -->
             <a href="EN_H2.html" class="circle-overlay circle-1" title="Consulting"></a>
